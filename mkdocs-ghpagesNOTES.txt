@@ -1,0 +1,2 @@
+mkdocs build
+ghp-import -n -p -f site/

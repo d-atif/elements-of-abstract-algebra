@@ -1,0 +1,18 @@
+site_name: Elements of Abstract Algebra
+markdown_extensions:
+  - mdx_math
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.css  
+theme:
+  name: readthedocs  # Use the Material theme
+nav:
+  - Home: index.md
+  # - Chapter 1:
+  #     - Introduction: chapter1/introduction.md
+  #     - Details: chapter1/details.md
+  - Chapter 2:
+      - Subgroups: Subgroups.md
+  - Chapter 3:
+      - galois: galois.md

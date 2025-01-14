@@ -142,7 +142,7 @@ aa^{-1} = e,
 <p>where <script type="math/tex"> e </script> is the identity element of <script type="math/tex"> G </script>. So, we know that the identity element <script type="math/tex"> e </script> is in <script type="math/tex"> H </script>. Now, since <script type="math/tex"> e, a \in H </script>, again using the assumption, we get:</p>
 <p>
 <script type="math/tex; mode=display">
-ea^{-1} \in H.
+ea^{-1} \in H
 </script>
 </p>
 <p>Thus, we have shown that <script type="math/tex"> a \in H \implies a^{-1} \in H </script>, and the proof for (1) is complete.</p>
@@ -151,10 +151,10 @@ ea^{-1} \in H.
 <p>Let <script type="math/tex"> a, b \in H </script>. By (1), we know that <script type="math/tex"> b \in H \implies b^{-1} \in H </script>. Now, since <script type="math/tex"> a, b^{-1} \in H </script>, by the starting assumption, we get:</p>
 <p>
 <script type="math/tex; mode=display">
-a(b^{-1})^{-1} = ab.
+a(b^{-1})^{-1} \in H
 </script>
 </p>
-<p>Thus, we have shown that <script type="math/tex"> a, b \in H \implies ab \in H </script>, and the proof for (2) is complete.</p>
+<p>and since a(b^{-1})^{-1} = ab, we have that <script type="math/tex">ab \in H</script>. Thus, we have shown that <script type="math/tex"> a, b \in H \implies ab \in H </script>, and the proof for (2) is complete.</p>
 <p>Since (1) and (2) are true, <script type="math/tex"> H </script> is indeed a subgroup of <script type="math/tex"> G </script>, and the statement is proven.</p>
 <hr />
 <p>We proved both directions, the proof is complete. <div align="right"><script type="math/tex">\square</script></div></p>

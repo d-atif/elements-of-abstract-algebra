@@ -18,23 +18,32 @@ function getVisitorCount() {
 // Call the function when page loads
 document.addEventListener('DOMContentLoaded', getVisitorCount);
 
-/// Add this to docs/javascripts/counter.js
-const NAMESPACE = 'algebra';  // Can be any string you want
-const KEY = '1234';  // Choose any random string as your private key
+// Add this to docs/javascripts/counter.js
+console.log('Counter script loaded');  // Debug log
 
-// Function to get the count privately
+const NAMESPACE = 'algebra';
+const KEY = '1234';
+
 function logVisit() {
+    console.log('Logging visit...');  // Debug log
     fetch(`https://api.countapi.xyz/key/${KEY}/hit/${NAMESPACE}`)
         .catch(error => console.error('Error logging visit:', error));
 }
 
-// Make the check function globally accessible
+// Explicitly attach to window
 window.checkVisits = function() {
+    console.log('Checking visits...');  // Debug log
     fetch(`https://api.countapi.xyz/key/${KEY}/get/${NAMESPACE}`)
         .then(response => response.json())
         .then(data => console.log('Total visits:', data.value))
         .catch(error => console.error('Error fetching count:', error));
-}
+};
 
 // Log the visit when page loads
-document.addEventListener('DOMContentLoaded', logVisit);
+document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM loaded, calling logVisit');  // Debug log
+    logVisit();
+});
+
+// Additional debug check
+console.log('checkVisits function is defined:', typeof window.checkVisits === 'function');

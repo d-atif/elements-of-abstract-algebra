@@ -44,11 +44,24 @@
                 <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                 </li>
               </ul>
+              <p class="caption"><span class="caption-text">Set Theory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >About this section</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../1/">1</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
               <p class="caption"><span class="caption-text">Group Theory</span></p>
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
     <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../26a/">Problem 26a.</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26b/">Problem 26b.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26c/">Problem 26c.</a>
                 </li>
     </ul>
                   </li>
@@ -118,6 +131,7 @@
 <h3 id="implies-assume-h-is-subgroup-of-g">"<script type="math/tex">\implies </script>" Assume <script type="math/tex">H</script> is subgroup of <script type="math/tex">G</script>
 </h3>
 <p>This means that the following is true:</p>
+<!-- subgroup axioms -->
 <p>
 <script type="math/tex; mode=display"> a \in H \implies a^{-1} \in H \quad (1)</script>
 <script type="math/tex; mode=display"> a, b \in H \implies ab \in H \quad (2)</script>
@@ -136,10 +150,10 @@ Let <script type="math/tex">a, b \in H </script>. By <script type="math/tex">(1)
 <p>Let <script type="math/tex"> a \in H </script>. By our assumption, for <script type="math/tex"> b = a </script>, we get:</p>
 <p>
 <script type="math/tex; mode=display">
-aa^{-1} = e,
+aa^{-1} \in H,
 </script>
 </p>
-<p>where <script type="math/tex"> e </script> is the identity element of <script type="math/tex"> G </script>. So, we know that the identity element <script type="math/tex"> e </script> is in <script type="math/tex"> H </script>. Now, since <script type="math/tex"> e, a \in H </script>, again using the assumption, we get:</p>
+<p>and because <script type="math/tex">aa^{-1} = e</script> we have shown that the identity element <script type="math/tex"> e </script> is in <script type="math/tex"> H </script>. Now, since <script type="math/tex"> e, a \in H </script>, again using the assumption, we get:</p>
 <p>
 <script type="math/tex; mode=display">
 ea^{-1} \in H
@@ -154,7 +168,7 @@ ea^{-1} \in H
 a(b^{-1})^{-1} \in H
 </script>
 </p>
-<p>and since a(b^{-1})^{-1} = ab, we have that <script type="math/tex">ab \in H</script>. Thus, we have shown that <script type="math/tex"> a, b \in H \implies ab \in H </script>, and the proof for (2) is complete.</p>
+<p>and since <script type="math/tex">a(b^{-1})^{-1} = ab</script>, we have that <script type="math/tex">ab \in H</script>. Thus, we have shown that <script type="math/tex"> a, b \in H \implies ab \in H </script>, and the proof for (2) is complete.</p>
 <p>Since (1) and (2) are true, <script type="math/tex"> H </script> is indeed a subgroup of <script type="math/tex"> G </script>, and the statement is proven.</p>
 <hr />
 <p>We proved both directions, the proof is complete. <div align="right"><script type="math/tex">\square</script></div></p>
@@ -166,7 +180,7 @@ a(b^{-1})^{-1} \in H
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../26b/" class="btn btn-neutral float-left" title="Problem 26b."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../26c/" class="btn btn-neutral float-left" title="Problem 26c."><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -189,7 +203,7 @@ a(b^{-1})^{-1} \in H
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../26b/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../26c/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

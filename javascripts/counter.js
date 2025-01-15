@@ -18,9 +18,9 @@ function getVisitorCount() {
 // Call the function when page loads
 document.addEventListener('DOMContentLoaded', getVisitorCount);
 
-// Add this to docs/javascripts/counter.js
+/// Add this to docs/javascripts/counter.js
 const NAMESPACE = 'algebra';  // Can be any string you want
-const KEY = 'key123';  // Choose any random string as your private key
+const KEY = '1234';  // Choose any random string as your private key
 
 // Function to get the count privately
 function logVisit() {
@@ -28,8 +28,8 @@ function logVisit() {
         .catch(error => console.error('Error logging visit:', error));
 }
 
-// Function to check the count (call this from browser console when you want to check)
-function checkVisits() {
+// Make the check function globally accessible
+window.checkVisits = function() {
     fetch(`https://api.countapi.xyz/key/${KEY}/get/${NAMESPACE}`)
         .then(response => response.json())
         .then(data => console.log('Total visits:', data.value))

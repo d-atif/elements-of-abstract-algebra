@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Problem 26d. - Elements of Abstract Algebra</title>
+    <title>G - Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Problem 26d.";
-        var mkdocs_page_input_path = "26d.md";
+        var mkdocs_page_name = "G";
+        var mkdocs_page_input_path = "g.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -50,24 +50,18 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Group Theory</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../Group%20Theory%20Remarks/">Group Theory Remarks</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" >Examples of group structure</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
+    <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../26a/">Problem 26a.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26b/">Problem 26b.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26c/">Problem 26c.</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 26d.</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../26d/">Problem 26d.</a>
                 </li>
     </ul>
                   </li>
@@ -84,8 +78,8 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Galois Theory</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../g/">G</a>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">G</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Ring Theory</span></p>
@@ -107,9 +101,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Group Theory</li>
-          <li class="breadcrumb-item">Examples of group structure</li>
-      <li class="breadcrumb-item active">Problem 26d.</li>
+          <li class="breadcrumb-item">Galois Theory</li>
+      <li class="breadcrumb-item active">G</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -118,49 +111,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="problem-26d">Problem  26d.</h1>
-<p>Let <script type="math/tex">S</script> be a semigroup with a finite number of elements. Suppose that the two cancellation laws hold in <script type="math/tex">S</script>; that is, if either <script type="math/tex">ab = ac</script> or <script type="math/tex">ba = ca</script>, then <script type="math/tex">b = c</script>. Show that <script type="math/tex">S</script> is a group.</p>
-<hr />
-<p>Once again, we need to prove that the group axioms are true for <script type="math/tex">S</script>.</p>
-<ol>
-<li>Closure: <script type="math/tex">S</script> is a semigroup, so by definition closure holds in <script type="math/tex">S</script>.</li>
-<li>Associativity: Same as closure.</li>
-<li>
-<p>Existence of the identity element: Let's assume <script type="math/tex">S \neq \varnothing</script>, this means <script type="math/tex">\exists a \in S</script>. Consider now the following set <script type="math/tex; mode=display">A=\{a^n \colon a \in S, n \in \mathbb N\}</script> We know <script type="math/tex">\varnothing \neq A \subseteq S</script>, since <script type="math/tex">a^1 \in A</script>, and by induction and closure of the semigroup we also have <script type="math/tex">a^{n} \in S \ \forall n \in \mathbb N</script>. Now, by Dirichlet's (aka pigeonhole) principle, since <script type="math/tex">A</script> is finite, and <script type="math/tex">\mathbb N</script> is infinite, there must exist <script type="math/tex">n, m \in \mathbb N \colon n < m </script> for which we have <script type="math/tex; mode=display">a^n = a^m \tag 1</script> Expanding the semigroup products on both sides of this equality: 
-<script type="math/tex; mode=display">
-    \begin{align}
- \underbrace {(a \dots a)}_{m-1 \ as}\underbrace{(a \dots a)}_{n-m+1 \ as} = \underbrace {(a \dots a)}_{m-1 \ as} a &\implies a^{n-m+1} = a \tag 2\\
- & \iff a^{n-m}a = a \\
- & \iff aa^{n-m} = a
-    \end {align}
-</script>
-where we used the associativity of the semigroup, and the left cancellation law. The above means that we found the identity element for an arbitrary <script type="math/tex">a \in S</script>, namely <script type="math/tex">e=a^{n-m}</script>.
-But we could've grouped the <script type="math/tex">a</script>s in equation <script type="math/tex">(1)</script> so that we set the equation up for the right cancellation, which would have brought us to the same conclusion: 
-<script type="math/tex; mode=display">
-    \begin{align}
-    \underbrace{(a \dots a)}_{n-m+1 \ as} \underbrace{(a \dots a)}_{m-1 \ as} = a\underbrace{(a \dots a)}_{m-1 \ as} &\implies a^{n-m+1} = a \\
-    &\iff a^{n-m}a = a
-    \end{align}
-</script>
-</p>
-</li>
-<li>
-<p>Existence of an inverse for all elements of <script type="math/tex">S</script>: Continuing the reasoning from above, consider the following <script type="math/tex; mode=display">e=a^{n-m}=aa^{n-m-1}=a^{n-m-1}a</script>
-the above equalities being true by associativity. But this tells us that for an arbitrary <script type="math/tex">a \in S</script> its inverse is <script type="math/tex">a^{n-m-1}</script>. It just remains to consider what if <script type="math/tex">n-m = 1</script> since then the inverse would be <script type="math/tex">a^0</script> and we don't know whether this element is in <script type="math/tex">S</script>.</p>
-</li>
-</ol>
-<h2 id="proof">Proof</h2>
-<hr />
-<div align="right">\(\square\)</div>
-
-<h2 id="additional-thoughts">Additional thoughts</h2>
-<p>todo</p>
+                
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../26c/" class="btn btn-neutral float-left" title="Problem 26c."><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../35a/" class="btn btn-neutral float-right" title="Problem 35a.">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../f/" class="btn btn-neutral float-left" title="F"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../r/" class="btn btn-neutral float-right" title="R">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -183,10 +140,10 @@ the above equalities being true by associativity. But this tells us that for an 
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../26c/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../f/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../35a/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../r/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

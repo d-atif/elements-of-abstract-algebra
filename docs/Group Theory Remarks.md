@@ -1,0 +1,1 @@
+<!-- todo: write here about using set theory as given etc. how "product" is used etc. whatever else pops up -->

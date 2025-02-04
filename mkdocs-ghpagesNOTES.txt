@@ -1,2 +1,8 @@
 mkdocs build
 ghp-import -n -p -f site/
+
+
+mkdocs serve
+
+
+checkVisits()

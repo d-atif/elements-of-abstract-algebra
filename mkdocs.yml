@@ -1,6 +1,8 @@
-site_name: Elements of Abstract Algebra
+site_name: Attempted solutions of selected problems from Elements of Abstract Algebra by Allan Clarke
 markdown_extensions:
   - mdx_math
+  - attr_list
+  - footnotes
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 extra_css:
@@ -9,10 +11,15 @@ theme:
   name: readthedocs  # Use the Material theme
 nav:
   - Home: index.md
-  # - Chapter 1:
-  #     - Introduction: chapter1/introduction.md
-  #     - Details: chapter1/details.md
+  - Set Theory:
+      - Set Theory Remarks.md
   - Group Theory:
+      - Group Theory Remarks.md
+      - Examples of group structure:
+          - 26a.md
+          - 26b.md
+          - 26c.md #unfinished
+          - 26d.md
       - Subgroups and cosets: 
           - 35a.md
   - Field Theory:

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Problem 26d. - Elements of Abstract Algebra</title>
+    <title>Problem 26d. - Attempted solutions of selected problems from Elements of Abstract Algebra by Allan Clarke</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Elements of Abstract Algebra
+          <a href=".." class="icon icon-home"> Attempted solutions of selected problems from Elements of Abstract Algebra by Allan Clarke
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -63,7 +63,7 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 26d.</a>
     <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
+    <li class="toctree-l3"><a class="reference internal" href="#proof-faulty-read-below">Proof (faulty, read below)</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
     </li>
@@ -100,7 +100,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Elements of Abstract Algebra</a>
+          <a href="..">Attempted solutions of selected problems from Elements of Abstract Algebra by Allan Clarke</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -121,12 +121,14 @@
                 <h1 id="problem-26d">Problem  26d.</h1>
 <p>Let <script type="math/tex">S</script> be a semigroup with a finite number of elements. Suppose that the two cancellation laws hold in <script type="math/tex">S</script>; that is, if either <script type="math/tex">ab = ac</script> or <script type="math/tex">ba = ca</script>, then <script type="math/tex">b = c</script>. Show that <script type="math/tex">S</script> is a group.</p>
 <hr />
+<h2 id="proof-faulty-read-below">Proof (faulty, read below)</h2>
+<p><em>Note: This proof is wrong, feel free to find the mistake. Link to correct solution and more comments below in the <a href="#additional-thoughts">Additional thoughts</a> section.</em></p>
 <p>Once again, we need to prove that the group axioms are true for <script type="math/tex">S</script>.</p>
 <ol>
 <li>Closure: <script type="math/tex">S</script> is a semigroup, so by definition closure holds in <script type="math/tex">S</script>.</li>
 <li>Associativity: Same as closure.</li>
 <li>
-<p>Existence of the identity element: Let's assume <script type="math/tex">S \neq \varnothing</script>, this means <script type="math/tex">\exists a \in S</script>. Consider now the following set <script type="math/tex; mode=display">A=\{a^n \colon a \in S, n \in \mathbb N\}</script> We know <script type="math/tex">\varnothing \neq A \subseteq S</script>, since <script type="math/tex">a^1 \in A</script>, and by induction and closure of the semigroup we also have <script type="math/tex">a^{n} \in S \ \forall n \in \mathbb N</script>. Now, by Dirichlet's (aka pigeonhole) principle, since <script type="math/tex">A</script> is finite, and <script type="math/tex">\mathbb N</script> is infinite, there must exist <script type="math/tex">n, m \in \mathbb N \colon n < m </script> for which we have <script type="math/tex; mode=display">a^n = a^m \tag 1</script> Expanding the semigroup products on both sides of this equality: 
+<p>Existence of the identity element: Let's assume <script type="math/tex">S \neq \varnothing</script>, this means <script type="math/tex">\exists a \in S</script>. Consider now the following set <script type="math/tex; mode=display">A=\{a^n \colon a \in S, n \in \mathbb N\}</script> We know the following two things: <script type="math/tex">\varnothing \neq A \subseteq S</script>. That <script type="math/tex">A</script> is not empty we know because <script type="math/tex">a^1 \in A</script>. And <script type="math/tex">A</script> is a subset of <script type="math/tex">S</script> true since we have, by induction and closure of the semigroup, <script type="math/tex">a^{n} \in S \ \forall n \in \mathbb N</script>. Now, by Dirichlet's (aka pigeonhole) principle, since <script type="math/tex">A</script> is finite, and <script type="math/tex">\mathbb N</script> is infinite, there must exist <script type="math/tex">n, m \in \mathbb N \colon n < m </script> for which we have <script type="math/tex; mode=display">a^n = a^m \tag 1</script> Expanding the semigroup products on both sides of this equality: 
 <script type="math/tex; mode=display">
     \begin{align}
  \underbrace {(a \dots a)}_{m-1 \ as}\underbrace{(a \dots a)}_{n-m+1 \ as} = \underbrace {(a \dots a)}_{m-1 \ as} a &\implies a^{n-m+1} = a \tag 2\\
@@ -134,27 +136,20 @@
  & \iff aa^{n-m} = a
     \end {align}
 </script>
-where we used the associativity of the semigroup, and the left cancellation law. The above means that we found the identity element for an arbitrary <script type="math/tex">a \in S</script>, namely <script type="math/tex">e=a^{n-m}</script>.
-But we could've grouped the <script type="math/tex">a</script>s in equation <script type="math/tex">(1)</script> so that we set the equation up for the right cancellation, which would have brought us to the same conclusion: 
-<script type="math/tex; mode=display">
-    \begin{align}
-    \underbrace{(a \dots a)}_{n-m+1 \ as} \underbrace{(a \dots a)}_{m-1 \ as} = a\underbrace{(a \dots a)}_{m-1 \ as} &\implies a^{n-m+1} = a \\
-    &\iff a^{n-m}a = a
-    \end{align}
-</script>
-</p>
+Above we used the associativity of the semigroup, and the left cancellation law. So, we found an element <script type="math/tex">e=a^{n-m}</script> that leaves <script type="math/tex">a</script> invariant, i.e. we proved that every element has its own identity. To prove that this really is the identity element, it will suffice to prove that they are all the same element. More precisely, we want to show <script type="math/tex">a^ka^{n-m} = a^k \ \forall k \in \mathbb N</script>, and we can do this by induction. For <script type="math/tex">k=1</script> we know it's true. Now we assume it's true for <script type="math/tex">k</script>. Then for <script type="math/tex">k+1</script> we have <script type="math/tex">a^{k+1}a^{n-m}=a^kaa^{n-m}=a^ka^{n-m}=a^k</script>, the last equality being true by the inductive hypothesis. Thus we've shown that all the elements have the one and the same identity element, hence <script type="math/tex">S</script> has the identity element.</p>
 </li>
 <li>
 <p>Existence of an inverse for all elements of <script type="math/tex">S</script>: Continuing the reasoning from above, consider the following <script type="math/tex; mode=display">e=a^{n-m}=aa^{n-m-1}=a^{n-m-1}a</script>
-the above equalities being true by associativity. But this tells us that for an arbitrary <script type="math/tex">a \in S</script> its inverse is <script type="math/tex">a^{n-m-1}</script>. It just remains to consider what if <script type="math/tex">n-m = 1</script> since then the inverse would be <script type="math/tex">a^0</script> and we don't know whether this element is in <script type="math/tex">S</script>.</p>
+the above equalities being true by associativity. But this tells us that for an arbitrary <script type="math/tex">a \in S</script> its inverse is <script type="math/tex">a^{n-m-1}</script>. It just remains to consider what if <script type="math/tex">n-m = 1</script> since then the inverse would be <script type="math/tex">a^0</script> and we don't know whether this element is in <script type="math/tex">S</script>. For this case, we would have <script type="math/tex; mode=display">e=a^{n-m}=a^1=a</script>, in particular <script type="math/tex">ae=a=e</script>, thus in this case as well <script type="math/tex">a</script> is invertible.</p>
 </li>
 </ol>
-<h2 id="proof">Proof</h2>
 <hr />
+<p>We proved all that needed to be proved, the proof is complete.</p>
 <div align="right">\(\square\)</div>
 
 <h2 id="additional-thoughts">Additional thoughts</h2>
-<p>todo</p>
+<p>If you just want the correct and arguably better solution of this problem, here you go:<a href="https://math.stackexchange.com/questions/203023/a-finite-cancellative-semigroup-is-a-group">Mathematics
+A finite, cancellative semigroup is a group</a>. As in for the mentioned mistake, I believe that we showed that only the set <script type="math/tex">A\subseteq S</script> has the identity element, but we didn't do so for the whole semigroup <script type="math/tex">S</script>. Only after typing up this proof I realized this mistake, so I decided to leave it as an example of a faulty proof, for educational purposes. Here is also a <a href="https://math.stackexchange.com/questions/5025301/a-question-about-the-proof-of-finite-cancellative-semigroups-being-groups">link to the question about this proof I asked on MSE</a> that helped me understand some previous insufficiencies of the proof (check the discussion in the comments).</p>
               
             </div>
           </div><footer>

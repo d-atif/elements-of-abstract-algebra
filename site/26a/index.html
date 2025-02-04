@@ -151,10 +151,10 @@ We know this is true because composition of function is associative, and we know
 <li>Existence of the identity element: The identity function, defined with <script type="math/tex">1(x) := x, \forall x \in X</script> is a bijection, and we know from set theory that <script type="math/tex">1f = f = f1</script> is true for all functions, and particularly for bijections.</li>
 <li>Existence of an inverse for all elements of <script type="math/tex">\mathcal B</script>: Every bijective function has an inverse function, that is a bijection as well, and its inverse is the function of which it is an inverse. Formally: <script type="math/tex">\forall f \in \mathcal B \ \exists f^{-1}\in \mathcal B: ff^{-1}=1=f^{-1}f</script>, which is what we needed to show.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
 </ol>
-<hr />
 <p>The proof is complete.</p>
 <div align="right">\(\square\)</div>
 
+<hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
 <p>This problem made me think of <a href="https://en.wikipedia.org/wiki/Category_theory">Category Theory</a>, and its connections with algebra and groups in particular. Let me explain some of these connections. </p>
 <p>In this problem we get introduced to the "semigroup", which is an algebraic structure "weaker" than the group, meaning that we are necessitating less<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> rules which it has to obey, i.e. we don't care about identity elements, or inverse elements in a semigroup. So, what if we wanted to define an algebraic structure that's a little stronger than the semigroup, and add, say, the identity element axiom to its definition? This would give us the <strong>monoid</strong>, which is essentially a semigroup + identity element axiom. So if we order these structures by their "strength", we get the following ordering: semigroup<script type="math/tex"><</script>monoid<script type="math/tex"><</script>group (or, every group is a monoid and a semigroup, every monoid is a semigroup, see image below). Here is where the connection with category theory comes in: <strong>A category with just one object is a monoid. A category with just one object, but where all the morphisms are invertible is a group. Zounds!</strong></p>

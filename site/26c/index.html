@@ -62,6 +62,12 @@
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 26c.</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-ii">Proof of (ii):</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-i">Proof of (i):</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
     </li>
@@ -121,8 +127,8 @@
                 <h1 id="problem-26c">Problem  26c.</h1>
 <p>Let <script type="math/tex">S</script> be a semigroup with an element <script type="math/tex">e</script> such that <script type="math/tex">ea = a</script> for all <script type="math/tex">a \in S</script> and such that for every <script type="math/tex">a \in S</script> there exists <script type="math/tex">a^{-1} \in S</script> for which <script type="math/tex">a^{-1}a = e</script>. Prove that <script type="math/tex">S</script> is a group.</p>
 <hr />
-<h2 id="proof">Proof</h2>
-<p>We need to show </p>
+<h2 id="proof"><em>Proof</em></h2>
+<p>We need to show that the usual group axioms are true for <script type="math/tex">S</script>, that is:</p>
 <!-- group axioms -->
 <ol>
 <li>Closure</li>
@@ -131,14 +137,53 @@
 <li>Existence of an inverse for all elements of <script type="math/tex">S</script>
 </li>
 </ol>
-<p>Closure and associativity we get for free, since <script type="math/tex">S</script> is a semigroup, and semigroups by definition have this property. </p>
-<p>We also have the <em>left</em> identity and inverse <script type="math/tex">\forall a \in S</script>, so what we really need to show is that there exist the <em>right</em> identity element and inverse for all elements of <script type="math/tex">S</script>.</p>
-<p>Let's multiply <script type="math/tex">a^{-1}a=e</script> from the left, we get <script type="math/tex">a^{-1}a=e</script>
-unfinished</p>
-<hr />
+<p>Closure and associativity we get for free, since <script type="math/tex">S</script> is a semigroup, and semigroups by definition have these properties. </p>
+<p>We are also given the existence of the <em>left</em> identity and the <em>left</em> inverse, so what we really need to show is that there exists the <em>right</em> identity element for all elements in <script type="math/tex">S</script> and the <em>right</em> inverse of all elements of <script type="math/tex">S</script>.</p>
+<p>The updated goals are:<br />
+(i) Existence of the right identity element<br />
+(ii) Existence of the right inverse element</p>
+<p>Let's prove (ii) first. Also, we will be using the associative property freely, without explicitly mentioning that we used it later on.</p>
+<h3 id="proof-of-ii"><em>Proof</em> of (ii):</h3>
+<p>We need to show that for all <script type="math/tex">a \in S</script> there exists <script type="math/tex">a^{-1}</script> such that <script type="math/tex">aa^{-1}=e</script>. Let <script type="math/tex">a \in S</script>. Then, by assumption we know that there exists <script type="math/tex">a^{-1} \in S</script> that is the left inverse of <script type="math/tex">a</script>. Now, since <script type="math/tex">a^{-1} \in S</script>, using the same assumption, we get that there exists the inverse of this element in <script type="math/tex">S</script>, namely, there exists <script type="math/tex">(a^{-1})^{-1} \in S \colon (a^{-1})^{-1}a^{-1}=e</script>, and let's define <script type="math/tex">b \colon = (a^{-1})^{-1}</script>. Now we can write the last equality compactly as <script type="math/tex">ba^{-1}=e</script>. Consider now the equation <script type="math/tex">a^{-1}a = e</script> that we are given, and let's multiply it with <script type="math/tex">b</script> from the left, we get the following:
+<script type="math/tex; mode=display">
+    \begin{align}
+        a^{-1}a &= e &\iff\\
+        b(a^{-1}a) &= be &\iff \\
+        (ba^{-1})a &= be &\iff \\
+        ea &= be &\iff \\
+        a &= be
+    \end{align}
+</script>
+Now we use the same reasoning as before and deduce that, since <script type="math/tex">b \in S</script>, that means that there is <script type="math/tex">b^{-1} \in S \colon b^{-1}b = e</script>. Combining this with what we have derived so far we get
+<script type="math/tex; mode=display">ba^{-1} = e = b^{-1}b \implies ba^{-1}=b^{-1}b</script>
+Let's manipulate this last equality using everything we know so far:
+<script type="math/tex; mode=display">
+    \begin{align}
+        ba^{-1} &= b^{-1}b &\iff \\
+        b(ea^{-1}) &= e &\iff \\
+        (be)a^{-1} &= e &\iff \\
+        aa^{-1} &= e &\iff \\
+    \end{align}
+</script>
+</p>
+<p>Thus we obtain the desired the existence of the right inverse, (ii) is proven.</p>
+<h3 id="proof-of-i"><em>Proof</em> of (i):</h3>
+<p>For this part, we need to show that there exists <script type="math/tex">e \in S: ae=a</script> for all (a \in S). Consider the product <script type="math/tex">ae</script>, since <script type="math/tex">S</script> is a semigroup, we have that <script type="math/tex">ae \in S</script>. Let's rewrite <script type="math/tex">ae</script> using the given assumption about the existence of the left identity element, and let's proceed from there using the results we obtained in (ii):
+<script type="math/tex; mode=display">
+    \begin{align} 
+        ae &= a(a^{-1}a) &\iff \\
+        ae &= (aa^{-1})a &\iff \\
+        ae &= ea
+    \end{align}
+</script>
+</p>
+<p>The last equality being what we wanted show, thus (i) is proven.</p>
+<p>We proved both (i) and (ii), <script type="math/tex">S</script> is indeed a group. </p>
 <div align="right">\(\square\)</div>
-
+<hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
+<p>As you surely noted, I abused and overloaded <script type="math/tex">e</script>  and <script type="math/tex">a^{-1}</script>, the proper way to do it was to show that there exist <script type="math/tex">e'</script> and <script type="math/tex">a'</script> with the desired properties, and then show that they are equal to <script type="math/tex">e</script> and <script type="math/tex">a^{-1}</script>, respectively. If I find time I'll fix this. </p>
+<p>It feels like there should be an easier proof of this, but after struggling for hours, I was happy to settle for this proof. Initially, I failed to prove this and skipped it. When I returned to it, it took me probably 3 hours to solve it, split across multiple sessions. Not sure why I struggled so much. I was sleep deprived though, and a little burnt out from exams. In hindsight, the idea is straight forward (as always): just work with what you are given: you have the left inverse, what you need to realize is that you also have the left inverse of the left inverse, and in turn, that that too, has a left inverse. The rest is the usual symbol manipulation.</p>
               
             </div>
           </div><footer>

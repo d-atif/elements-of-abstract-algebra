@@ -13,6 +13,7 @@
         "monoids",
         "morphisms",
         "semigroup",
+        "semigroups",
         "surjective"
     ]
 }

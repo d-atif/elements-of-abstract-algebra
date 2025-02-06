@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Exercise 28b. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Exercise 28b.";
+        var mkdocs_page_input_path = "28b.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Solutions to Selected Exercises from Elements of Abstract Algebra
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Set Theory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Set%20Theory%20Remarks/">Set Theory Remarks</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Group Theory</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Group%20Theory%20Remarks/">Group Theory Remarks</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >The Definition of Group Structure</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../26a/">Exercise 26a.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26b/">Exercise 26b.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26c/">Exercise 26c.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26d/">Exercise 26d.</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 28b.</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-lambda_a-being-injective">Proof of \lambda_a being injective</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-lambda_a-being-surjective">Proof of \lambda_a being surjective</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../a">None</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Subgroups and cosets</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../35a/">Exercise 35a.</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Field Theory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../f">None</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Galois Theory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../g">None</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Ring Theory</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../r">None</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Solutions to Selected Exercises from Elements of Abstract Algebra</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Group Theory</li>
+          <li class="breadcrumb-item">The Definition of Group Structure</li>
+      <li class="breadcrumb-item active">Exercise 28b.</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="exercise-28b">Exercise 28b.</h1>
+<p>Let <script type="math/tex">a</script> be an element of a group <script type="math/tex">G</script>. Show that the mapping <script type="math/tex">\lambda_a\colon G \rightarrow G</script> given by <script type="math/tex">\lambda_a g = ag</script> for any <script type="math/tex">g \in G</script> is a one-to-one correspondence.</p>
+<hr />
+<h2 id="proof"><em>Proof</em></h2>
+<p>One-to-one correspondence is a synonym for a bijective mapping, that is, a mapping that is both surjective (onto) and injective (one-to-one). Our goal here will be to prove that the <script type="math/tex">\lambda_a</script> mapping is both surjective and injective.</p>
+<h3 id="proof-of-lambda_a-being-injective"><em>Proof</em> of <script type="math/tex">\lambda_a</script> being injective</h3>
+<p>Since <script type="math/tex">a \in G</script>, <script type="math/tex">G</script> is non-empty. Let <script type="math/tex">f,g \in G</script>, then we have
+<script type="math/tex; mode=display">\lambda_a f = af</script>
+<script type="math/tex; mode=display">\lambda_a g = ag</script>
+Let's suppose now that <script type="math/tex">\lambda_a f = \lambda_a g</script>. We can rewrite this as <script type="math/tex">af = ag</script>. Since <script type="math/tex">a, f, g \in G</script>, and <script type="math/tex">G</script> is a group, the cancellation laws hold, and thus we have 
+<script type="math/tex; mode=display">\lambda_a f = \lambda_a g \iff af = ag \implies f = g</script>
+The last implication is what we needed to show, <script type="math/tex">\lambda_a</script> is indeed injective</p>
+<h3 id="proof-of-lambda_a-being-surjective"><em>Proof</em> of <script type="math/tex">\lambda_a</script> being surjective</h3>
+<p>We need to show that for all <script type="math/tex">c \in G</script>, there exists a <script type="math/tex">b \in G</script>, such that <script type="math/tex">ab = c</script>. Let <script type="math/tex">c \in G</script>. We can write <script type="math/tex">c</script> as <script type="math/tex">c = ec = (aa^{-1})c=a(a^{-1}c)</script>. That is, we get that <script type="math/tex">a(a^{-1}c)= c</script>. Since <script type="math/tex">a^{-1} \in G</script> as well, the product <script type="math/tex">a^{-1}c</script> is also in <script type="math/tex">G</script>. We can denote it like <script type="math/tex">b = a^{-1}c</script>, rewriting the derived above we get <script type="math/tex">ab=c</script>, which is what we needed to show. The mapping <script type="math/tex">\lambda_a</script> is indeed surjective.</p>
+<p>We proved that <script type="math/tex">\lambda_a</script> is both injective and surjective, therefore it is bijective, which is what we needed to show. The proof is complete.</p>
+<div align="right">\(\square\)</div>
+
+<hr />
+<h2 id="additional-thoughts">Additional thoughts</h2>
+<p>This seemed important to me. Not only that every element of a group can be expressed as a product of two elements of the group, but this exercise tells us that every element can be expressed as a product of two elements of the group, given that one is fixed. In other words, left multiplication by <script type="math/tex">a</script> defines a bijection of the group onto itself, ensuring that every element can be obtained as a left-multiplication of some element by <script type="math/tex">a</script>. Compare this with the set of real numbers, which is algebraically a field&mdash;can you say that all real numbers are expressible as product of other two real numbers? What about finite, or countable fields? </p>
+<p>Here is a table representing a field with four elements, also known as Galois field with four elements (the subset highlighted in red is also a field, known as the binary field <script type="math/tex">\text{F}</script> or <script type="math/tex">\text{GF(2)}</script>).
+<img alt="Alt text" src="../images/galois_field.png" style="display: block; margin: 0 auto; width: 350px;" /><p style="text-align: center"><a href="https://en.wikipedia.org/wiki/Field_(mathematics)#Finite_fields">image from wikipedia</a></p></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../26d/" class="btn btn-neutral float-left" title="Exercise 26d."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../35a/" class="btn btn-neutral float-right" title="Exercise 35a.">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../26d/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../35a/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

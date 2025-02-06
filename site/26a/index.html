@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Problem 26a. - Solutions to Selected Problems from Elements of Abstract Algebra</title>
+    <title>Exercise 26a. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Problem 26a.";
+        var mkdocs_page_name = "Exercise 26a.";
         var mkdocs_page_input_path = "26a.md";
         var mkdocs_page_url = null;
       </script>
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Solutions to Selected Problems from Elements of Abstract Algebra
+          <a href=".." class="icon icon-home"> Solutions to Selected Exercises from Elements of Abstract Algebra
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -53,9 +53,9 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../Group%20Theory%20Remarks/">Group Theory Remarks</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" >Examples of group structure</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" >The Definition of Group Structure</a>
     <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 26a.</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 26a.</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
         <ul>
@@ -69,17 +69,25 @@
     </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26b/">Problem 26b.</a>
+                <li class="toctree-l2"><a class="reference internal" href="../26b/">Exercise 26b.</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26c/">Problem 26c.</a>
+                <li class="toctree-l2"><a class="reference internal" href="../26c/">Exercise 26c.</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26d/">Problem 26d.</a>
+                <li class="toctree-l2"><a class="reference internal" href="../26d/">Exercise 26d.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../28b/">Exercise 28b.</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
+    <ul>
+                <li class="toctree-l2"><a class="" href="../a">None</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >Subgroups and cosets</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../35a/">Problem 35a.</a>
+                <li class="toctree-l2"><a class="reference internal" href="../35a/">Exercise 35a.</a>
                 </li>
     </ul>
                   </li>
@@ -106,7 +114,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Solutions to Selected Problems from Elements of Abstract Algebra</a>
+          <a href="..">Solutions to Selected Exercises from Elements of Abstract Algebra</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -114,8 +122,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Group Theory</li>
-          <li class="breadcrumb-item">Examples of group structure</li>
-      <li class="breadcrumb-item active">Problem 26a.</li>
+          <li class="breadcrumb-item">The Definition of Group Structure</li>
+      <li class="breadcrumb-item active">Exercise 26a.</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,7 +132,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="problem-26a">Problem  26a.</h1>
+                <h1 id="exercise-26a">Exercise  26a.</h1>
 <p>A semigroup is a set <script type="math/tex"> S </script> with a product which associates to each ordered
 pair <script type="math/tex"> (a, b) </script> of elements of <script type="math/tex"> S </script> an element <script type="math/tex"> ab \in S </script> in such a way that <script type="math/tex"> (ab)c = a(bc) </script> for any elements <script type="math/tex"> a, b, c \in S </script>. Show that the set of all mappings from a given set <script type="math/tex"> X </script> to itself forms a semigroup in which the product is composition of mappings. Show that the set of all one-to-one correspondences of <script type="math/tex"> X </script> with itself forms a group under composition.</p>
 <hr />
@@ -156,9 +164,9 @@ We know this is true because composition of function is associative, and we know
 
 <hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
-<p>This problem made me think of <a href="https://en.wikipedia.org/wiki/Category_theory">Category Theory</a>, and its connections with algebra and groups in particular. Let me explain some of these connections. </p>
-<p>In this problem we get introduced to the "semigroup", which is an algebraic structure "weaker" than the group, meaning that we are necessitating less<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> rules which it has to obey, i.e. we don't care about identity elements, or inverse elements in a semigroup. So, what if we wanted to define an algebraic structure that's a little stronger than the semigroup, and add, say, the identity element axiom to its definition? This would give us the <strong>monoid</strong>, which is essentially a semigroup + identity element axiom. So if we order these structures by their "strength", we get the following ordering: semigroup<script type="math/tex"><</script>monoid<script type="math/tex"><</script>group (or, every group is a monoid and a semigroup, every monoid is a semigroup, see image below). Here is where the connection with category theory comes in: <strong>A category with just one object is a monoid. A category with just one object, but where all the morphisms are invertible is a group. Zounds!</strong></p>
-<p>Here is a <a href="https://math.stackexchange.com/questions/655902/a-question-about-groups-as-categories">MSE thread</a> with some nice answers that explains the connection with groups in particular, towards which this problem hints at, if you are familiar with the definition of a category.</p>
+<p>This exercise made me think of <a href="https://en.wikipedia.org/wiki/Category_theory">Category Theory</a>, and its connections with algebra and groups in particular. Let me explain some of these connections. </p>
+<p>In this exercise we get introduced to the "semigroup", which is an algebraic structure "weaker" than the group, meaning that we are necessitating less<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup> rules which it has to obey, i.e. we don't care about identity elements, or inverse elements in a semigroup. So, what if we wanted to define an algebraic structure that's a little stronger than the semigroup, and add, say, the identity element axiom to its definition? This would give us the <strong>monoid</strong>, which is essentially a semigroup + identity element axiom. So if we order these structures by their "strength", we get the following ordering: semigroup<script type="math/tex"><</script>monoid<script type="math/tex"><</script>group (or, every group is a monoid and a semigroup, every monoid is a semigroup, see image below). Here is where the connection with category theory comes in: <strong>A category with just one object is a monoid. A category with just one object, but where all the morphisms are invertible is a group. Zounds!</strong></p>
+<p>Here is a <a href="https://math.stackexchange.com/questions/655902/a-question-about-groups-as-categories">MSE thread</a> with some nice answers that explains the connection with groups in particular, towards which this exercise hints at, if you are familiar with the definition of a category.</p>
 <p><img alt="Alt text" src="../images/magma-to-group.jpg" style="display: block; margin: 0 auto; width: 350px;" /><p style="text-align: center"><a href="https://en.wikipedia.org/wiki/Monoid">image from wikipedia</a></p></p>
 <div class="footnote">
 <hr />
@@ -176,7 +184,7 @@ We know this is true because composition of function is associative, and we know
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../Group%20Theory%20Remarks/" class="btn btn-neutral float-left" title="Group Theory Remarks"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../26b/" class="btn btn-neutral float-right" title="Problem 26b.">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../26b/" class="btn btn-neutral float-right" title="Exercise 26b.">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

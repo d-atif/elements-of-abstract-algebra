@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Problem 35a. - Solutions to Selected Problems from Elements of Abstract Algebra</title>
+    <title>Exercise 35a. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Problem 35a.";
+        var mkdocs_page_name = "Exercise 35a.";
         var mkdocs_page_input_path = "35a.md";
         var mkdocs_page_url = null;
       </script>
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Solutions to Selected Problems from Elements of Abstract Algebra
+          <a href=".." class="icon icon-home"> Solutions to Selected Exercises from Elements of Abstract Algebra
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -53,21 +53,29 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../Group%20Theory%20Remarks/">Group Theory Remarks</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" >The Definition of Group Structure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../26a/">Exercise 26a.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26b/">Exercise 26b.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26c/">Exercise 26c.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../26d/">Exercise 26d.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../28b/">Exercise 28b.</a>
+                </li>
+    </ul>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../26a/">Problem 26a.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26b/">Problem 26b.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26c/">Problem 26c.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../26d/">Problem 26d.</a>
+                <li class="toctree-l2"><a class="" href="../a">None</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" >Subgroups and cosets</a>
     <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Problem 35a.</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 35a.</a>
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
         <ul>
@@ -106,7 +114,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Solutions to Selected Problems from Elements of Abstract Algebra</a>
+          <a href="..">Solutions to Selected Exercises from Elements of Abstract Algebra</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -115,7 +123,7 @@
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Group Theory</li>
           <li class="breadcrumb-item">Subgroups and cosets</li>
-      <li class="breadcrumb-item active">Problem 35a.</li>
+      <li class="breadcrumb-item active">Exercise 35a.</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -124,7 +132,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="problem-35a">Problem  35a.</h1>
+                <h1 id="exercise-35a">Exercise  35a.</h1>
 <p>Show that a nonempty subset <script type="math/tex"> H </script> of a group <script type="math/tex"> G </script> is a subgroup of <script type="math/tex"> G </script> if and only if <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>.</p>
 <hr />
 <h2 id="proof"><em>Proof</em></h2>
@@ -175,12 +183,12 @@ a(b^{-1})^{-1} \in H
 
 <hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
-<p>I had one doubt with this proof from which I learned something. I started this problem just playing around with the assumptions. The "<script type="math/tex">\implies</script>" direction was very straightforward. For the "<script type="math/tex">\Longleftarrow</script>" direction I again just started playing with the given assumption, trying to see if something will pop up. Along the way I noticed I could prove <script type="math/tex">a^{-1} \in H </script> if <script type="math/tex">e, a \in H </script>. But to do that I needed to show that <script type="math/tex">e</script> is in <script type="math/tex">H</script>. Then as I was moving symbols around, I realised that I can set <script type="math/tex">b = a</script> and use the assumption to show that <script type="math/tex">e \in H</script>. While I was pretty sure I can set <script type="math/tex">b=a</script> due to my prior experience with proofs, I still had some doubts. I thought, there is no <script type="math/tex">b \neq a</script> condition, so who says I can't put <script type="math/tex">b = a </script>? I found this <a href="https://math.stackexchange.com/questions/3162033/h-is-a-subgroup-of-g-iff-a-b-in-h-implies-ab-1-in-h">answer</a> on MSE, here they brought to my attention the actual name of this rule of inference that allows us to to set <script type="math/tex">a = x, b = y</script> for whatever <script type="math/tex">x, y \in H</script>. Also note that I used the same letters for the assumption and in the reasoning, the linked answer does it better by introducing the variable <script type="math/tex">x</script>. Right now I'm too lazy to change this in my proof, so I leave it as it is.</p>
+<p>I had one doubt with this proof from which I learned something. I started this exercise just playing around with the assumptions. The "<script type="math/tex">\implies</script>" direction was very straightforward. For the "<script type="math/tex">\Longleftarrow</script>" direction I again just started playing with the given assumption, trying to see if something will pop up. Along the way I noticed I could prove <script type="math/tex">a^{-1} \in H </script> if <script type="math/tex">e, a \in H </script>. But to do that I needed to show that <script type="math/tex">e</script> is in <script type="math/tex">H</script>. Then as I was moving symbols around, I realised that I can set <script type="math/tex">b = a</script> and use the assumption to show that <script type="math/tex">e \in H</script>. While I was pretty sure I can set <script type="math/tex">b=a</script> due to my prior experience with proofs, I still had some doubts. I thought, there is no <script type="math/tex">b \neq a</script> condition, so who says I can't put <script type="math/tex">b = a </script>? I found this <a href="https://math.stackexchange.com/questions/3162033/h-is-a-subgroup-of-g-iff-a-b-in-h-implies-ab-1-in-h">answer</a> on MSE, here they brought to my attention the actual name of this rule of inference that allows us to to set <script type="math/tex">a = x, b = y</script> for whatever <script type="math/tex">x, y \in H</script>. Also note that I used the same letters for the assumption and in the reasoning, the linked answer does it better by introducing the variable <script type="math/tex">x</script>. Right now I'm too lazy to change this in my proof, so I leave it as it is.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../26d/" class="btn btn-neutral float-left" title="Problem 26d."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../28b/" class="btn btn-neutral float-left" title="Exercise 28b."><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -203,7 +211,7 @@ a(b^{-1})^{-1} \in H
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../26d/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../28b/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

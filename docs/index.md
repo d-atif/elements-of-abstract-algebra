@@ -13,11 +13,11 @@ One of the goals of this project is to make explicit the invisible heuristics an
 
 ## Structure of the project
 
-In general, I follow the structure of the book and every exercise has its own page. E.g. [Exercise 35a](https://d-atif.github.io/elements-of-abstract-algebra/35a/). Note that I use latin letters in exercise enumeration, that is, "35a" instead of "35\(\alpha \)". This is because of limitations of [mkdocs](https://www.mkdocs.org/), which I used to create this website (btw I like mkdocs, it's great). At the bottom of a exercise page I'll sometimes post "Additional thoughts", which will be a place for thoughts on how I solved the exercise, what heuristic I used, or whatever I have to say, so look out for those. 
+In general, I follow the structure of the book and every exercise has its own page. E.g. [Exercise 35a](https://d-atif.github.io/elements-of-abstract-algebra/35a/). Note that I use latin letters in exercise enumeration, that is, "35a" instead of "35\(\alpha \)". This is because of limitations of [mkdocs](https://www.mkdocs.org/), which I used to create this website (btw I like mkdocs, it's great). At the bottom of an exercise page I'll sometimes post "Additional thoughts", which will be a place for thoughts on how I solved the exercise, what heuristic I used, or whatever I have to say, so look out for those. 
 
 ## Contact
 - email: de.atif\(\zeta\)@gmail.com, \(\zeta=10\)
-- mathstodon: https://mathstodon.xyz/@atif
+- mathstodon: [https://mathstodon.xyz/@atif](https://mathstodon.xyz/@atif)
 
 ## ><><
 ![quote](images/quote.png){: style="display: block; margin: 0 auto;width: 500px;"}<p style="text-align: center"><a href="https://gwern.net/on-really-trying">image from here</a></p>

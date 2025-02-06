@@ -1,4 +1,4 @@
-site_name: Attempted solutions of selected problems from Elements of Abstract Algebra by Allan Clarke
+site_name: Solutions to Selected Exercises from Elements of Abstract Algebra
 markdown_extensions:
   - mdx_math
   - attr_list
@@ -15,11 +15,14 @@ nav:
       - Set Theory Remarks.md
   - Group Theory:
       - Group Theory Remarks.md
-      - Examples of group structure:
+      - The Definition of Group Structure:
           - 26a.md
           - 26b.md
           - 26c.md
           - 26d.md
+          - 28b.md
+      - Examples of group structure:
+          - a
       - Subgroups and cosets: 
           - 35a.md
   - Field Theory:

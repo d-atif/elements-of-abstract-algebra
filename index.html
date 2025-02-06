@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>Solutions to Selected Problems from Elements of Abstract Algebra</title>
+    <title>Solutions to Selected Exercises from Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -31,7 +31,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> Solutions to Selected Problems from Elements of Abstract Algebra
+          <a href="." class="icon icon-home"> Solutions to Selected Exercises from Elements of Abstract Algebra
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -63,21 +63,29 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="Group%20Theory%20Remarks/">Group Theory Remarks</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" >The Definition of Group Structure</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="26a/">Exercise 26a.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="26b/">Exercise 26b.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="26c/">Exercise 26c.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="26d/">Exercise 26d.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="28b/">Exercise 28b.</a>
+                </li>
+    </ul>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="26a/">Problem 26a.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="26b/">Problem 26b.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="26c/">Problem 26c.</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="26d/">Problem 26d.</a>
+                <li class="toctree-l2"><a class="" href="a">None</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >Subgroups and cosets</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="35a/">Problem 35a.</a>
+                <li class="toctree-l2"><a class="reference internal" href="35a/">Exercise 35a.</a>
                 </li>
     </ul>
                   </li>
@@ -104,7 +112,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">Solutions to Selected Problems from Elements of Abstract Algebra</a>
+          <a href=".">Solutions to Selected Exercises from Elements of Abstract Algebra</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -120,16 +128,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="solutions-to-selected-problems-from-elements-of-abstract-algebra-by-allan-clarke">Solutions to Selected Problems from Elements of Abstract Algebra by Allan Clarke</h1>
+                <h1 id="solutions-to-selected-exercises-from-elements-of-abstract-algebra-by-allan-clarke">Solutions to Selected Exercises from Elements of Abstract Algebra by Allan Clarke</h1>
 <p><img alt="Alt text" src="images/eimage.jpg" style="display: block; margin: 0 auto; width: 150px;" /></p>
 <!-- ![Alt text](../images/your-image.png){: style="display: block; margin: 0 auto; width: 300px;"} -->
 
 <h2 id="overview">Overview</h2>
 <p><em>Note&mdash;5th February 2025: solutions are still being posted.</em></p>
-<p>I'm self-studying this book because I want to study algebraic topology, category theory and other fields that use abstract algebra extensively (all of math?). Here I'll post attempts of solving selected problems that I found interesting. If you find mistakes, or have suggestions, please do let me know. If you would like to discuss a particular problem, or whatever, I'd be happy to hear from you. You can find my contact info at the bottom of this page. When I finish with the book, I plan to enable direct contributions from other people via github, in case someone wants to help make this a complete collection of solutions for this book.</p>
-<p>One of the goals of this project is to make explicit the invisible heuristics and tacit knowledge that permeates mathematics, problem solving and proving in particular. Maybe I'll create a "Heuristic index for abstract algebra" at one point. From this, another ambitious goal emerges: making this project become a kind of self-study guide. For now, it's a way to help me exercise to express myself clearly and succinctly.</p>
+<p>I'm self-studying this book because I want to study algebraic topology, category theory and other fields that use abstract algebra extensively (all of math?). Here I'll post attempts of solving selected exercises that I found interesting. If you find mistakes, or have suggestions, please do let me know. If you would like to discuss a particular exercise, or whatever, I'd be happy to hear from you. You can find my contact info at the bottom of this page. When I finish with the book, I plan to enable direct contributions from other people via github, in case someone wants to help make this a complete collection of solutions for this book.</p>
+<p>One of the goals of this project is to make explicit the invisible heuristics and tacit knowledge that permeates mathematics, exercise solving and proving in particular. Maybe I'll create a "Heuristic index for abstract algebra" at one point. From this, another ambitious goal emerges: making this project become a kind of self-study guide. For now, it's a way to help me exercise to express myself clearly and succinctly.</p>
 <h2 id="structure-of-the-project">Structure of the project</h2>
-<p>In general, I follow the structure of the book and every problem has its own page. E.g. <a href="https://d-atif.github.io/elements-of-abstract-algebra/35a/">Problem 35a</a>. Note that I use latin letters in problem enumeration, that is, "35a" instead of "35<script type="math/tex">\alpha </script>". This is because of limitations of <a href="https://www.mkdocs.org/">mkdocs</a>, which I used to create this website (btw I like mkdocs, it's great). At the bottom of a problem page I'll sometimes post "Additional thoughts", which will be a place for thoughts on how I solved the problem, what heuristic I used, or whatever I have to say, so look out for those. </p>
+<p>In general, I follow the structure of the book and every exercise has its own page. E.g. <a href="https://d-atif.github.io/elements-of-abstract-algebra/35a/">Exercise 35a</a>. Note that I use latin letters in exercise enumeration, that is, "35a" instead of "35<script type="math/tex">\alpha </script>". This is because of limitations of <a href="https://www.mkdocs.org/">mkdocs</a>, which I used to create this website (btw I like mkdocs, it's great). At the bottom of a exercise page I'll sometimes post "Additional thoughts", which will be a place for thoughts on how I solved the exercise, what heuristic I used, or whatever I have to say, so look out for those. </p>
 <h2 id="contact">Contact</h2>
 <ul>
 <li>email: de.atif<script type="math/tex">\zeta</script>@gmail.com, <script type="math/tex">\zeta=10</script>
@@ -188,5 +196,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-02-05 11:10:08.816576+00:00
+Build Date UTC : 2025-02-06 06:05:33.341682+00:00
 -->

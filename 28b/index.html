@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Exercise 26b. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
+    <title>Exercise 28b. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Exercise 26b.";
-        var mkdocs_page_input_path = "26b.md";
+        var mkdocs_page_name = "Exercise 28b.";
+        var mkdocs_page_input_path = "28b.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -57,19 +57,25 @@
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../26a/">Exercise 26a.</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 26b.</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../26b/">Exercise 26b.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26c/">Exercise 26c.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26d/">Exercise 26d.</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../28b/">Exercise 28b.</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 28b.</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-lambda_a-being-injective">Proof of \lambda_a being injective</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-lambda_a-being-surjective">Proof of \lambda_a being surjective</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -117,7 +123,7 @@
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Group Theory</li>
           <li class="breadcrumb-item">The Definition of Group Structure</li>
-      <li class="breadcrumb-item active">Exercise 26b.</li>
+      <li class="breadcrumb-item active">Exercise 28b.</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -126,37 +132,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="exercise-26b">Exercise  26b.</h1>
-<p>Let <script type="math/tex">S</script> be a semigroup with an element <script type="math/tex">e</script> such that <script type="math/tex">ea = a = ae</script> for all
-<script type="math/tex">a \in S</script>. Show that <script type="math/tex">e</script> is unique.</p>
+                <h1 id="exercise-28b">Exercise 28b.</h1>
+<p>Let <script type="math/tex">a</script> be an element of a group <script type="math/tex">G</script>. Show that the mapping <script type="math/tex">\lambda_a\colon G \rightarrow G</script> given by <script type="math/tex">\lambda_a g = ag</script> for any <script type="math/tex">g \in G</script> is a one-to-one correspondence.</p>
 <hr />
 <h2 id="proof"><em>Proof</em></h2>
-<p>Let <script type="math/tex">e_1, e_2 \in S</script> and let them have the identity element property, that is:
-<script type="math/tex; mode=display">e_1a=a=ae_1</script>
-<script type="math/tex; mode=display">e_2a=a=ae_2</script>
-</p>
-<p>Thus, by transitivity, we get <script type="math/tex">e_1a = e_2a</script>. Multiplying (in the group product sense) both side by <script type="math/tex">a^{-1}</script> from the right, we get </p>
-<!-- \[(e_1a)a^{-1} = (e_2a)a^{-1} \iff e_1(aa^{-1}) = e_2(aa^{-1}) \iff e_1e = e_2e \iff e_1 = e_2\] -->
+<p>One-to-one correspondence is a synonym for a bijective mapping, that is, a mapping that is both surjective (onto) and injective (one-to-one). Our goal here will be to prove that the <script type="math/tex">\lambda_a</script> mapping is both surjective and injective.</p>
+<h3 id="proof-of-lambda_a-being-injective"><em>Proof</em> of <script type="math/tex">\lambda_a</script> being injective</h3>
+<p>Since <script type="math/tex">a \in G</script>, <script type="math/tex">G</script> is non-empty. Let <script type="math/tex">f,g \in G</script>, then we have
+<script type="math/tex; mode=display">\lambda_a f = af</script>
+<script type="math/tex; mode=display">\lambda_a g = ag</script>
+Let's suppose now that <script type="math/tex">\lambda_a f = \lambda_a g</script>, we can rewrite this as <script type="math/tex">af = ag</script>. Since <script type="math/tex">a, f, g \in G</script>, and <script type="math/tex">G</script> is a group, the cancellation laws hold, and thus we have 
+<script type="math/tex; mode=display">\lambda_a f = \lambda_a g \iff af = ag \implies f = g</script>
+The last implication is what we needed to show, <script type="math/tex">\lambda_a</script> is indeed injective</p>
+<h3 id="proof-of-lambda_a-being-surjective"><em>Proof</em> of <script type="math/tex">\lambda_a</script> being surjective</h3>
+<p>We need to show that for all <script type="math/tex">c \in G</script>, there exists a <script type="math/tex">b \in G</script>, such that <script type="math/tex">ab = c</script>. Let <script type="math/tex">c \in G</script>. We can write <script type="math/tex">c</script> as <script type="math/tex">c = ec = (aa^{-1})c=a(a^{-1}c)</script>. That is, we get that <script type="math/tex">a(a^{-1}c)= c</script>. Since <script type="math/tex">a^{-1} \in G</script> as well, the product <script type="math/tex">a^{-1}c</script> is also in <script type="math/tex">G</script>. We can denote it like <script type="math/tex">b = a^{-1}c</script>, rewriting the derived above we get <script type="math/tex">ab=c</script>, which is what we needed to show. The mapping <script type="math/tex">\lambda_a</script> is indeed surjective.</p>
+<p>We proved that <script type="math/tex">\lambda_a</script> is both injective and surjective, therefore it is bijective, which is what we needed to show. The proof is complete.</p>
+<div align="right">\(\square\)</div>
 
-<p>
-<script type="math/tex; mode=display">
-\begin{align}    
-(e_1a)a^{-1} = (e_2a)a^{-1} & \iff e_1(aa^{-1}) = e_2(aa^{-1}) \\
-                            & \iff e_1e = e_2e \\
-                            & \iff e_1 = e_2
-\end{align}
-</script>
-</p>
-<p>We have shown that if there are two elements with the identity element property, they have to be the same element, the proof is complete.<div align="right"><script type="math/tex">\square</script></div></p>
 <hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
-<p>Admittedly, I solved this using the cancellation law, but the book never proves the cancellation law of groups. Here is <a href="https://math.stackexchange.com/questions/1797877/by-cancellation-in-group-theory#:~:text=The%20cancellation%20property%20of%20groups,both%20sides%20of%20the%20equation.">a link to the proof</a>. When I self-study I start questioning the most basic steps, which I often find to be a bad habit. Here, I questioned why can we even multiply the equation with an element of the group. I've proven and convinced myself of this at some point, so I can't bring myself to do it again. <a href="https://math.stackexchange.com/questions/3402885/group-theory-am-i-allowed-to-multiply-both-sides-of-an-equation-with-the-same">Here is an answer to this question as well</a>--it's nice to be reminded that we are dealing with functions; however obvious it may be, I keep losing that context while in the group/algebra context. And yes this can be proven by contradiction. Every time I see an opportunity to prove by contradiction I remember Andrej Bauer (I believe) saying that we should practice logical hygiene, and I try proving the thing directly.</p>
+<p>This seemed important to me. Not only that every element of a group can be expressed as a product of two elements of the group, but this exercise tells us that every element can be expressed as a product of two elements of the group, given that one is fixed. In other words, left multiplication by <script type="math/tex">a</script> defines a bijection of the group onto itself, ensuring that every element can be obtained as a left-multiplication of some element by <script type="math/tex">a</script>.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../26a/" class="btn btn-neutral float-left" title="Exercise 26a."><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../26c/" class="btn btn-neutral float-right" title="Exercise 26c.">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../26d/" class="btn btn-neutral float-left" title="Exercise 26d."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../35a/" class="btn btn-neutral float-right" title="Exercise 35a.">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -179,10 +180,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../26a/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../26d/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../26c/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../35a/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

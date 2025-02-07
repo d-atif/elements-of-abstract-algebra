@@ -65,6 +65,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../28b/">Exercise 28b.</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../28c/">Exercise 28c.</a>
+                </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" >Examples of group structure</a>
@@ -79,9 +81,9 @@
     <ul class="current">
     <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#implies-assume-h-is-subgroup-of-g">"\implies " Assume H is subgroup of G</a>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-rightarrow-colon">Proof of "\Rightarrow" \colon</a>
     </li>
-    <li class="toctree-l4"><a class="reference internal" href="#longleftarrow-assume-a-b-in-h-implies-ab-1-in-h">"\Longleftarrow" Assume a, b \in H implies ab^{-1} \in H</a>
+    <li class="toctree-l4"><a class="reference internal" href="#proof-of-leftarrow-colon">Proof of "\Leftarrow" \colon</a>
     </li>
         </ul>
     </li>
@@ -136,19 +138,26 @@
 <p>Show that a nonempty subset <script type="math/tex"> H </script> of a group <script type="math/tex"> G </script> is a subgroup of <script type="math/tex"> G </script> if and only if <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>.</p>
 <hr />
 <h2 id="proof"><em>Proof</em></h2>
-<h3 id="implies-assume-h-is-subgroup-of-g">"<script type="math/tex">\implies </script>" Assume <script type="math/tex">H</script> is subgroup of <script type="math/tex">G</script>
+<p>To prove this statement, which is an equivalence, we need to prove both directions:</p>
+<p>
+<script type="math/tex">"\Rightarrow"\colon</script> If <script type="math/tex">H</script> is a subgroup of <script type="math/tex">G</script> then if <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>
+<br />
+<script type="math/tex">"\Leftarrow"\colon</script> If <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>, then <script type="math/tex">H</script> is a subgroup of <script type="math/tex">G</script>
+</p>
+<h3 id="proof-of-rightarrow-colon"><em>Proof</em> of <script type="math/tex">"\Rightarrow" \colon </script>
 </h3>
-<p>This means that the following is true:</p>
+<p>We assume <script type="math/tex">H</script> is subgroup of <script type="math/tex">G</script> and we need to show <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>.</p>
+<p>Since <script type="math/tex">H</script> is a subgroup, we have that the following is true for all <script type="math/tex">x,y \in H</script>:</p>
 <!-- subgroup axioms -->
 <p>
-<script type="math/tex; mode=display"> a \in H \implies a^{-1} \in H \quad (1)</script>
-<script type="math/tex; mode=display"> a, b \in H \implies ab \in H \quad (2)</script>
+<script type="math/tex; mode=display"> x \in H \implies x^{-1} \in H \quad (1)</script>
+<script type="math/tex; mode=display"> x, y \in H \implies xy \in H \quad (2)</script>
 </p>
-<p>We need to show <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>.
-Let <script type="math/tex">a, b \in H </script>. By <script type="math/tex">(1)</script> we have <script type="math/tex">b^{-1} \in H</script>, that is <script type="math/tex">a, b^{-1} \in H</script>. Now, by <script type="math/tex">(2)</script>, this implies that <script type="math/tex">ab^{-1} \in H</script>, which is what we needed to show.</p>
-<h3 id="longleftarrow-assume-a-b-in-h-implies-ab-1-in-h">"<script type="math/tex">\Longleftarrow</script>" Assume <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>
+<p>Let <script type="math/tex">a, b \in H </script>. By <script type="math/tex">(1)</script> we have <script type="math/tex">b^{-1} \in H</script>, that is <script type="math/tex">a, b^{-1} \in H</script>. Now, by <script type="math/tex">(2)</script>, this implies that <script type="math/tex">ab^{-1} \in H</script>, which is what we needed to show.</p>
+<h3 id="proof-of-leftarrow-colon"><em>Proof</em> of <script type="math/tex">"\Leftarrow" \colon</script>
 </h3>
-<p>We want to show that <script type="math/tex"> H </script> is a subgroup of <script type="math/tex"> G </script>. To do this, we need to show that:</p>
+<p>Now we assume <script type="math/tex"> a, b \in H </script> implies <script type="math/tex"> ab^{-1} \in H </script>.
+We want to show that <script type="math/tex"> H </script> is a subgroup of <script type="math/tex"> G </script>. To do this, we need to show that:</p>
 <p><strong>(1)</strong> <script type="math/tex">a \in H \implies a^{-1} \in H </script>
 <br />
 <strong>(2)</strong> <script type="math/tex">a, b \in H \implies ab \in H </script>
@@ -183,12 +192,12 @@ a(b^{-1})^{-1} \in H
 
 <hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
-<p>I had one doubt with this proof from which I learned something. I started this exercise just playing around with the assumptions. The "<script type="math/tex">\implies</script>" direction was very straightforward. For the "<script type="math/tex">\Longleftarrow</script>" direction I again just started playing with the given assumption, trying to see if something will pop up. Along the way I noticed I could prove <script type="math/tex">a^{-1} \in H </script> if <script type="math/tex">e, a \in H </script>. But to do that I needed to show that <script type="math/tex">e</script> is in <script type="math/tex">H</script>. Then as I was moving symbols around, I realised that I can set <script type="math/tex">b = a</script> and use the assumption to show that <script type="math/tex">e \in H</script>. While I was pretty sure I can set <script type="math/tex">b=a</script> due to my prior experience with proofs, I still had some doubts. I thought, there is no <script type="math/tex">b \neq a</script> condition, so who says I can't put <script type="math/tex">b = a </script>? I found this <a href="https://math.stackexchange.com/questions/3162033/h-is-a-subgroup-of-g-iff-a-b-in-h-implies-ab-1-in-h">answer</a> on MSE, here they brought to my attention the actual name of this rule of inference that allows us to to set <script type="math/tex">a = x, b = y</script> for whatever <script type="math/tex">x, y \in H</script>. Also note that I used the same letters for the assumption and in the reasoning, the linked answer does it better by introducing the variable <script type="math/tex">x</script>. Right now I'm too lazy to change this in my proof, so I leave it as it is.</p>
+<p>I had one doubt with this proof from which I learned something. I started this exercise just playing around with the assumptions. The "<script type="math/tex">\implies</script>" direction was very straightforward. For the "<script type="math/tex">\Longleftarrow</script>" direction I again just started playing with the given assumption, trying to see if something will pop up. Along the way I noticed I could prove <script type="math/tex">a^{-1} \in H </script> if <script type="math/tex">e, a \in H </script>. But to do that I needed to show that <script type="math/tex">e</script> is in <script type="math/tex">H</script>. Then as I was moving symbols around, I realised that I can set <script type="math/tex">b = a</script> and use the assumption to show that <script type="math/tex">e \in H</script>. While I was pretty sure I can set <script type="math/tex">b=a</script> due to my prior experience with proofs, I still had some doubts. I thought, there is no <script type="math/tex">b \neq a</script> condition, so who says I can't put <script type="math/tex">b = a </script>? I found this <a href="https://math.stackexchange.com/questions/3162033/h-is-a-subgroup-of-g-iff-a-b-in-h-implies-ab-1-in-h">answer</a> on MSE, here they brought to my attention the actual name of this rule of inference that allows us to to set <script type="math/tex">a = x, b = y</script> for whatever <script type="math/tex">x, y \in H</script>.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../28b/" class="btn btn-neutral float-left" title="Exercise 28b."><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../28c/" class="btn btn-neutral float-left" title="Exercise 28c."><span class="icon icon-circle-arrow-left"></span> Previous</a>
     </div>
 
   <hr/>
@@ -211,7 +220,7 @@ a(b^{-1})^{-1} \in H
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../28b/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../28c/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>

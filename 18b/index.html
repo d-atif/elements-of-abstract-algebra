@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Exercise 28d. - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
+    <title>18b - Solutions to Selected Exercises from Elements of Abstract Algebra</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,8 +13,8 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Exercise 28d.";
-        var mkdocs_page_input_path = "28d.md";
+        var mkdocs_page_name = "18b";
+        var mkdocs_page_input_path = "18b.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -45,12 +45,12 @@
                 </li>
               </ul>
               <p class="caption"><span class="caption-text">Set Theory</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../Set%20Theory%20Remarks/">Set Theory Remarks</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../18a/">18a</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../18b/">18b</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">18b</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../18c/">18c</a>
                   </li>
@@ -62,11 +62,11 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Group Theory</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../Group%20Theory%20Remarks/">Group Theory Remarks</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" >The Definition of Group Structure</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >The Definition of Group Structure</a>
+    <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../26a/">Exercise 26a.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../26b/">Exercise 26b.</a>
@@ -79,13 +79,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../28c/">Exercise 28c.</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="#">Exercise 28d.</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#proof">Proof</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#additional-thoughts">Additional thoughts</a>
-    </li>
-    </ul>
+                <li class="toctree-l2"><a class="reference internal" href="../28d/">Exercise 28d.</a>
                 </li>
     </ul>
                   </li>
@@ -131,9 +125,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-          <li class="breadcrumb-item">Group Theory</li>
-          <li class="breadcrumb-item">The Definition of Group Structure</li>
-      <li class="breadcrumb-item active">Exercise 28d.</li>
+          <li class="breadcrumb-item">Set Theory</li>
+      <li class="breadcrumb-item active">18b</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -142,34 +135,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="exercise-28d">Exercise  28d.</h1>
-<p>Let <script type="math/tex">S</script> be a set with an operation which assigns to each ordered pair
-<script type="math/tex">(a, b)</script> of elements of <script type="math/tex">S</script> an element <script type="math/tex">a/b</script> of <script type="math/tex">S</script> in such a way that:<br />
-(1) there is an element <script type="math/tex">1 \in S</script>, such that <script type="math/tex">a/b=1</script> if and only if <script type="math/tex">a = b</script>;
-(2) for any elements <script type="math/tex">a, b, c \in S, \ (a/c)/(b/c) = a/b</script>.<br />
-Show that <script type="math/tex">S</script> is a group under the product defined by <script type="math/tex">ab = a/(1/b)</script>.</p>
-<hr />
-<h2 id="proof"><em>Proof</em></h2>
-<p>As usual, we need to show that the four group axioms hold for <script type="math/tex">S</script>.</p>
-<ol>
-<li>Closure: Let <script type="math/tex">x, y \in S</script>. We need to show that <script type="math/tex">ab \in S</script>, that is, that <script type="math/tex">a/(1/b) \in S</script>. It will suffice to show that <script type="math/tex">1/b \in S</script>. We know that <script type="math/tex">1 \in S</script>, (1) tells us that. We also know, that for each ordered pair <script type="math/tex">a, b</script> of elements in <script type="math/tex">S</script>, <script type="math/tex">a/b \in S</script> as well. Now, for <script type="math/tex">a = 1</script> and <script type="math/tex">b = b</script>^[1], we get that <script type="math/tex">1/b \in S</script>. Which is, as we said, enough for <script type="math/tex">ab</script> to be in <script type="math/tex">S</script>.</li>
-<li>Associativity: Let <script type="math/tex">a, b, c \in S</script>. We need to show that <script type="math/tex">(ab)c = a(bc)</script>. We have <script type="math/tex; mode=display">(i) \quad (ab)c = (a/(1/b))c=(a/(1/b))/(1/c)</script>
-and <script type="math/tex; mode=display">(ii) \quad a(bc) = a(b/(1/c)) = a/(1/(b/(1/c)))</script>
-</li>
-</ol>
-<p>Let's consider the "denominator" in <script type="math/tex">(ii)</script> first. Note that we can rewrite the <script type="math/tex">1</script> in its "numerator" as <script type="math/tex">(1/c)/(1/c)</script>, given the first assumption of the exercise. Using this we can then rewrite <script type="math/tex">1/(b/(1/c))</script> as <script type="math/tex">((1/c)/(1/c))/(b/(1/c))</script>. Now we can use the second assumption of the exercise, and cancel out the "denominators" of the big "fraction" &mdash; we get <script type="math/tex">(1/c)/b</script>. Plugging this result back in <script type="math/tex">(ii)</script> we get <script type="math/tex">a/((1/c)/b)</script>.</p>
-<p>Let's now consider the "numerator" in <script type="math/tex">(i)</script>. 
-unfinished</p>
-<div align="right">\(\square\)</div>
-
-<hr />
-<h2 id="additional-thoughts">Additional thoughts</h2>
+                
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../28c/" class="btn btn-neutral float-left" title="Exercise 28c."><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../35a/" class="btn btn-neutral float-right" title="Exercise 35a.">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../18a/" class="btn btn-neutral float-left" title="18a"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../18c/" class="btn btn-neutral float-right" title="18c">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -192,10 +164,10 @@ unfinished</p>
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../28c/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../18a/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../35a/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../18c/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

@@ -48,6 +48,22 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../Set%20Theory%20Remarks/">Set Theory Remarks</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" >Equivalence Relations</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../18a/">18a</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../18b/">18b</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../18c/">18c</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../19/">19</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../19a/">19a</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../19b/">19b</a>
+                </li>
+    </ul>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Group Theory</span></p>
               <ul class="current">
@@ -78,6 +94,8 @@
                 <li class="toctree-l2"><a class="reference internal" href="../28b/">Exercise 28b.</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../28c/">Exercise 28c.</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../28d/">Exercise 28d.</a>
                 </li>
     </ul>
                   </li>
@@ -172,13 +190,13 @@ Let's manipulate this last equality using everything we know so far:
         ba^{-1} &= b^{-1}b &\iff \\
         b(ea^{-1}) &= e &\iff \\
         (be)a^{-1} &= e &\iff \\
-        aa^{-1} &= e &\iff \\
+        aa^{-1} &= e
     \end{align}
 </script>
 </p>
-<p>Thus we obtain the desired the existence of the right inverse, (ii) is proven.</p>
+<p>Thus we obtain the desired existence of the right inverse, (ii) is proven.</p>
 <h3 id="proof-of-i"><em>Proof</em> of (i):</h3>
-<p>For this part, we need to show that there exists <script type="math/tex">e \in S: ae=a</script> for all (a \in S). Consider the product <script type="math/tex">ae</script>, since <script type="math/tex">S</script> is a semigroup, we have that <script type="math/tex">ae \in S</script>. Let's rewrite <script type="math/tex">ae</script> using the given assumption about the existence of the left identity element, and let's proceed from there using the results we obtained in (ii):
+<p>For this part, we need to show that there exists <script type="math/tex">e \in S: ae=a</script> for all <script type="math/tex">a \in S</script>. Consider the product <script type="math/tex">ae</script>, since <script type="math/tex">S</script> is a semigroup, we have that <script type="math/tex">ae \in S</script>. Let's rewrite <script type="math/tex">ae</script> using the given assumption about the existence of the left identity element, and let's proceed from there using the results we obtained in (ii):
 <script type="math/tex; mode=display">
     \begin{align} 
         ae &= a(a^{-1}a) &\iff \\
@@ -187,13 +205,13 @@ Let's manipulate this last equality using everything we know so far:
     \end{align}
 </script>
 </p>
-<p>The last equality being what we wanted show, thus (i) is proven.</p>
+<p>The last equality being what we wanted to show, thus (i) is proven.</p>
 <p>We proved both (i) and (ii), <script type="math/tex">S</script> is indeed a group. </p>
 <div align="right">\(\square\)</div>
 <hr />
 <h2 id="additional-thoughts">Additional thoughts</h2>
 <p>As you surely noted, I abused and overloaded <script type="math/tex">e</script>  and <script type="math/tex">a^{-1}</script>, the proper way to do it was to show that there exist <script type="math/tex">e'</script> and <script type="math/tex">a'</script> with the desired properties, and then show that they are equal to <script type="math/tex">e</script> and <script type="math/tex">a^{-1}</script>, respectively. If I find time I'll fix this. </p>
-<p>It feels like there should be an easier proof of this, but after struggling for hours, I was happy to settle for this proof. Initially, I failed to prove this and skipped it. When I returned to it, it took me probably 3 hours to solve it, split across multiple sessions. Not sure why I struggled so much. I was sleep deprived though, and a little burnt out from exams. In hindsight, the idea is straight forward (as always): just work with what you are given: you have the left inverse, what you need to realize is that you also have the left inverse of the left inverse, and in turn, that that too, has a left inverse. The rest is the usual symbol manipulation.</p>
+<p>It feels like there should be an easier proof of this, but after struggling for hours, I was happy to settle for this proof. Initially, I failed to prove this and skipped it. When I returned to it, it took me probably 3 hours to solve it, split across multiple sessions. Not sure why I struggled so much. In hindsight, the idea is straight forward (as always): just work with what you are given: you have the left inverse, what you need to realize is that you also have the left inverse of the left inverse, and in turn, that that too, has a left inverse. The rest is the usual symbol manipulation.</p>
               
             </div>
           </div><footer>

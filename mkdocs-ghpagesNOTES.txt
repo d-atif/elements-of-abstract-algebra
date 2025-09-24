@@ -1,7 +1,8 @@
+# run in order to commit/push
 mkdocs build
 ghp-import -n -p -f site/
 
-
+# run to get a live preview
 mkdocs serve
 
 

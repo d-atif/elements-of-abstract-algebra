@@ -13,6 +13,13 @@ nav:
   - Home: index.md
   - Set Theory:
       - Set Theory Remarks.md
+      # - Equivalence Relations:
+      #     - 18a.md
+      #     - 18b.md
+      #     - 18c.md
+      #     - 19.md
+      #     - 19a.md
+      #     - 19b.md
   - Group Theory:
       - Group Theory Remarks.md
       - The Definition of Group Structure:
@@ -22,6 +29,7 @@ nav:
           - 26d.md
           - 28b.md
           - 28c.md
+          - 28d.md
       - Examples of group structure:
           - a
       - Subgroups and cosets: 

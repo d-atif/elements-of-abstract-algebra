@@ -5,11 +5,14 @@
 
 ## Overview
 
-*Note&mdash;5th February 2025: solutions are still being posted.*
+*Note&mdash;24th September 2025: added exercises in the Set Theory section.*
 
-I'm self-studying this book because I want to study algebraic topology, category theory and other fields that use abstract algebra extensively (all of math?). Here I'll post attempts of solving selected exercises that I found interesting. If you find mistakes, or have suggestions, please do let me know. If you would like to discuss a particular exercise, or whatever, I'd be happy to hear from you. You can find my contact info at the bottom of this page. When I finish with the book, I plan to enable direct contributions from other people via github, in case someone wants to help make this a complete collection of solutions for this book.
+This project is a collection of attempted solutions to some exercises from Elements of Abstract Algebra by Allan Clarke. If you find mistakes, or have suggestions, please do let me know. If you would like to discuss a particular exercise, or whatever, I'd be happy to hear from you. You can find my contact info at the bottom of this page. When I finish with the book, I plan to enable direct contributions from other people via github, in case someone wants to help make this a complete collection of solutions for this book.
 
-One of the goals of this project is to make explicit the invisible heuristics and tacit knowledge that permeates mathematics, exercise solving and proving in particular. Maybe I'll create a "Heuristic index for abstract algebra" at one point. From this, another ambitious goal emerges: making this project become a kind of self-study guide. For now, it's a way to help me exercise to express myself clearly and succinctly.
+<!-- old info abt this project: -->
+<!-- I'm self-studying this book because I want to study algebraic topology, category theory and other fields that use abstract algebra extensively (all of math?). Here I'll post attempts of solving selected exercises that I found interesting. If you find mistakes, or have suggestions, please do let me know. If you would like to discuss a particular exercise, or whatever, I'd be happy to hear from you. You can find my contact info at the bottom of this page. When I finish with the book, I plan to enable direct contributions from other people via github, in case someone wants to help make this a complete collection of solutions for this book.
+
+One of the goals of this project is to make explicit the invisible heuristics and tacit knowledge that permeates mathematics, exercise solving and proving in particular. Maybe I'll create a "Heuristic index for abstract algebra" at one point. From this, another ambitious goal emerges: making this project become a kind of self-study guide. For now, it's a way to help me exercise to express myself clearly and succinctly. -->
 
 ## Structure of the project
 
